@@ -1,0 +1,56 @@
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover{
+    background-color: black;
+}
+
+.status{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+button{
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+.cell span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    pointer-events: none;
+}
+.dark-mode
+{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .cell span{
+    color: white;
+}
+
+.winning-cell{
+    background-color: goldenrod;
+}
