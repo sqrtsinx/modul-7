@@ -1,0 +1,113 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+header{
+    color: black;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-image: url('wallpaperflare.com_wallpaper (5).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:auto;
+    height:auto;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: gray;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+section:hover, .formulacontain:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulacontain{
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#conscept, #problem{
+    grid-column: span 2;
+}
+img{
+    border-radius: 8px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid-container{
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+   grid-template-columns: 1fr;
+   grid-gap: 10px;
+   padding: 20px;
+   border: 2px solid whitesmoke;
+}
+nav{
+    background-color: darkgray;
+    grid-gap: 10px;
+    padding: 20px;
+    border: 3px solid blue;
+    border-radius: 8px;
+    background-attachment: scroll; 
+}
+a{
+    color: antiquewhite;
+    right: 0;
+}
+a:active{
+    transform: translateY(4px);
+    transition: transform 0.3s ease;
+}
+
+section:target{
+    animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: white;
+    }
+    100%{
+        background-color: lightgreen;
+    }
+}
+
+.dark-mode{
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
